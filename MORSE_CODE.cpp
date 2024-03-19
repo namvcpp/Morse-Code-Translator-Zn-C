@@ -53,10 +53,10 @@ string find_morse_code(string str)
 
 string convert_to_morse(string str)
 {
-    string res = "", word = "";
+    string res, word;
     for(int i = 0 ; i < str.size() ; ++ i)
     {
-    	string p = "";
+    	string p;
     	p += str[i];
         if(p == " ")
         {
@@ -74,10 +74,10 @@ string convert_to_morse(string str)
 
 string convert_to_sentence(string str)
 {
-    string res = "", letter = "";
+    string res, letter;
     for(int i = 0 ; i < str.size() ; ++ i)
     {
-    	string p = "";
+    	string p;
     	p += str[i];
         if(p == " ")
         {
@@ -118,7 +118,7 @@ void instruction(){
 
 string upperCase(string s)
 {
-	string res = "";
+	string res;
 	for(int i = 0 ; i < s.size() ; ++ i)
 	{
 		if(s[i] >= 'a' && s[i] <= 'z')
